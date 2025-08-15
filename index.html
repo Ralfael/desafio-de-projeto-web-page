@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página - Módulo I - Primeiros Passos com HTML (Simulando Blog de Aprendizado)</title>
+</head>
+<style>
+    a{color:black;}
+    article{
+        padding-right: 200px;
+    }
+    img{margin-left: 30%;}
+</style>
+<body>
+    <h1>Módulo 1 - Primeiros Passos com HTML (Simulando Blog de Aprendizado)</h1>
+    <hr/>
+
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#history">História dos computadores</a></li>
+        <li><a href="#">O que são <i>Clients</i>?</a></li>
+        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li><a href="#structure">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#links">Links de referências</a></li>
+    </ul>
+
+    <h2 id="history">História dos computadores</h2>
+    <p>A palavra “computador” vem do verbo “computar” que, por sua vez, significa “calcular”. Sendo assim, podemos pensar que a criação de computadores 
+        começa na idade antiga, já que a relação de contar já intrigava os homens.
+    Dessa forma, uma das primeiras máquinas de computar foi o “ábaco”, instrumento mecânico de origem chinesa criado no século V a.C.</p>
+    Assim, ele é considerado o “primeiro computador”, uma espécie de calculadora que realizava operações algébricas.
+     No século XVII, o matemático escocês John Napier foi um dos responsáveis pela invenção da "régua de cálculo". 
+        Trata-se do primeiro instrumento analógico de contagem capaz de efetuar cálculos logaritmos. Essa invenção foi considerada a mãe das calculadoras modernas.</p>
+    <img src="img/evol.webp">
+    <article>
+    
+    <h2><i>Clients</i>?</h2>
+    <p>No desenvolvimento da web, "lado do cliente" refere-se a tudo em um aplicativo web que é exibido ou ocorre no cliente (dispositivo do usuário final). 
+        Isso inclui o que o usuário vê, como texto, imagens e o resto da IU, junto com quaisquer ações que um aplicativo execute no navegador do usuário.</p>
+    <p>Linguagens de marcação como HTML e CSS são interpretadas pelo navegador no lado do cliente. Além disso, muitos desenvolvedores contemporâneos estão 
+        incluindo processos do lado do cliente em sua arquitetura de aplicativos e deixando de fazer tudo no lado do servidor;
+         a lógica de negócios para páginas web dinâmicas*, por exemplo, geralmente é executada no lado do cliente em um aplicativo web moderno. Os processos do lado do cliente 
+         quase sempre são escritos em JavaScript.</p>
+    <p>No exemplo da netflix.com acima, o HTML, CSS e JavaScript que ditam como a página principal da Netflix aparece para o usuário são interpretados pelo navegador no lado do 
+        cliente. A página também pode responder a "eventos": por exemplo, se o mouse do usuário passar sobre uma das imagens em miniatura do filme, a imagem se expande e as 
+        miniaturas adjacentes se movem ligeiramente para um lado para abrir espaço para a imagem maior. Este é um exemplo de processo do lado do cliente; o código dentro da 
+        própria página web responde ao mouse do usuário e inicia essa ação sem se comunicar com o servidor.</p>
+    <p>O lado do cliente também é conhecido como front-end, embora esses dois termos não signifiquem exatamente a mesma coisa. O lado do cliente se refere apenas ao local 
+        onde os processos são executados, enquanto o front-end se refere aos tipos de processos que são executados no lado do cliente.</p>
+    <p>*Uma página web dinâmica é aquela que não exibe o mesmo conteúdo para todos os usuários e muda com base na entrada do usuário. 
+        A página inicial do Facebook é uma página dinâmica; a página de login do Facebook é, em sua maior parte, estática.</p>
+    </article>
+    <h2 id="servers"><i>Servers</i>?</h2>
+    <article>
+    <p>Muito parecido com o lado do cliente, o "lado do servidor" significa tudo o que acontece no servidor, em vez de no cliente. No passado, quase toda a lógica de negócios 
+        era executada no lado do servidor e isso incluía renderizar páginas da web dinâmicas, interagir com bancos de dados, autenticação de identidade e notificações push.</p>
+    <p>O problema de hospedar todos esses processos no lado do servidor é que cada solicitação envolvendo um deles tem que viajar desde o cliente até o servidor, todas as vezes. 
+        Isso apresenta uma grande quantidade de latência. Por esse motivo, os aplicativos contemporâneos executam mais códigos no lado do cliente; um caso de uso é renderizar 
+        páginas da web dinâmicas em tempo real, executando scripts no navegador que fazem alterações no conteúdo que o usuário vê.</p>
+    <p>Como com "front-end" e "lado do cliente", back-end também é um termo para os processos que ocorrem no servidor, embora back-end se refira apenas aos tipos de processos
+         e lado do servidor se refira ao local onde os processos são executados.</p>
+    
+    <!-- HTML Structure-->
+     <h2 id="structure">Como é uma estrutura básica de um HTML?</h2>
+     <img class="html-sctructure"src="img/hb.PNG">
+    <p>Os documentos HTML incluem uma declaração de tipo de documento e o elemento raiz <code dir="ltr" translate="no">&lt;html&gt;</code>. O cabeçalho e o corpo do documento estão aninhados no elemento <code dir="ltr" translate="no">&lt;html&gt;</code>. Embora o cabeçalho do documento não esteja visível para o visitante sem deficiência visual, ele é essencial para que o site funcione. Ele contém todas as metainformações, incluindo informações de mecanismos de pesquisa e resultados de mídias sociais, ícones para a guia do navegador e atalhos da tela inicial para dispositivos móveis, além do comportamento e da apresentação do seu conteúdo. Nesta seção, você descobrirá os componentes que, embora não visíveis, estão presentes em quase todas as páginas da Web.</p>
+cd
+
+<h3>HTML (Linguagem de Marcação de Hipertexto):</h3>
+Imagine uma casa. O HTML é a estrutura da casa, definindo as paredes, o telhado, as portas e janelas. Ele organiza o conteúdo da página, como títulos, parágrafos, imagens e links.</p>
+<h3>CSS (Folhas de Estilo em Cascata):</h3>
+<p>Voltando à analogia da casa, o CSS seria a decoração e o design de interiores. Ele controla a aparência da página, definindo cores, fontes, espaçamento, layout e outros elementos visuais.</p>
+<h3>JavaScript:</h3>
+No contexto da casa, o JavaScript seria como os sistemas de automação e comunicação. Ele permite que a casa responda a comandos, como abrir e fechar portas, acender luzes e interagir com os moradores. No site, o JavaScript adiciona interatividade, como animações, formulários, validações e atualizações em tempo real. </p>
+<h3>Html, CSS & JavaScript</h3>
+<p>Em analogia, o HTML é como o esqueleto de um site, a estrutura básica que define o conteúdo. O CSS é a pele e o estilo, responsável pela aparência visual e layout. Já o JavaScript é o sistema nervoso, adicionando interatividade e funcionalidades dinâmicas ao site, permitindo que ele responda às ações do usuário</p>
+<img src="img/html-structure.PNG">
+<h2 data-text="Adicionar a cada documento HTML" id="add_to_every_html_document" tabindex="-1">Adicionar a cada documento HTML</h2>
+<img src="img/anatomy.PNG">
+<p>Há vários recursos que devem ser considerados essenciais para toda e qualquer página da Web. Os navegadores ainda vão renderizar conteúdo se esses elementos estiverem ausentes, mas os incluem. Sempre.</p>
+
+<h3 data-text="&lt;!DOCTYPE html&gt;" id="doctype_html" tabindex="-1"><code dir="ltr" translate="no">&lt;!DOCTYPE html&gt;</code></h3>
+
+<p>A primeira coisa em qualquer documento HTML é o preâmbulo. Para HTML, você só precisa de 
+    <code dir="ltr" translate="no">&lt;!DOCTYPE html&gt;</code>. Pode parecer um elemento HTML, mas não é. É um tipo especial de nó chamado "doctype". O doctype diz ao navegador para usar o modo padrão. Se omitido, os navegadores usarão um modo de renderização diferente, conhecido como <a href="https://developer.mozilla.org/docs/Web/HTML/Quirks_Mode_and_Standards_Mode">modo quirks</a>. Incluir o doctype ajuda a evitar o modo quirks,</p>
+
+<h3 data-text="&lt;html&gt;" id="html" tabindex="-1"><code dir="ltr" translate="no">&lt;html&gt;</code></h3>
+
+<p>O elemento <code dir="ltr" translate="no">&lt;html&gt;</code> é o elemento raiz de um documento HTML. Ele é o pai de <code dir="ltr" translate="no">&lt;head&gt;</code> e <code dir="ltr" translate="no">&lt;body&gt;</code>, contendo tudo no documento HTML, exceto o doctype. Se omitida, ela ficará implícita, mas é importante incluí-la, porque é o elemento em que o idioma do conteúdo do documento é declarado.</p>
+
+<h3 data-text="Idioma do conteúdo" id="content_language" tabindex="-1">Idioma do conteúdo</h3>
+
+<p>O atributo de idioma <code dir="ltr" translate="no">lang</code> adicionado à tag <code dir="ltr" translate="no">&lt;html&gt;</code> define o idioma principal do documento. O valor do <a href="https://developer.mozilla.org/docs/Web/HTML/Global_attributes/lang#language_tag_syntax">atributo <code dir="ltr" translate="no">lang</code></a> é um código de idioma ISO de duas ou três letras seguido pela região. A região é opcional, mas recomendada, já que o idioma pode variar muito entre as regiões. Por exemplo, o francês é muito diferente no Canadá (<code dir="ltr" translate="no">fr-CA</code>) em comparação com Burkina Faso (<code dir="ltr" translate="no">fr-BF</code>). Essa declaração permite que leitores de tela, mecanismos de pesquisa e serviços de tradução saibam o idioma do documento.</p>
+
+<p>O atributo <code dir="ltr" translate="no">lang</code> não está limitado à tag <code dir="ltr" translate="no">&lt;html&gt;</code>. Se houver texto na página em um idioma diferente do idioma do documento principal, o atributo <code dir="ltr" translate="no">lang</code> deverá ser usado para identificar exceções ao idioma principal do documento.  Assim como quando é incluído na cabeça, o atributo <code dir="ltr" translate="no">lang</code> no corpo não tem efeito visual. Ele apenas acrescenta semântica, permitindo que tecnologias adaptativas e serviços automatizados saibam o idioma do conteúdo afetado.</p>
+
+<p>Além de definir o idioma do documento e as exceções a esse idioma base, o atributo pode ser usado em seletores de CSS. </p>
+
+<p>O primeiro elemento no <code dir="ltr" translate="no">&lt;head&gt;</code> precisa ser a declaração de codificação de caracteres <code dir="ltr" translate="no">charset</code>. Ele vem antes do título para garantir que o navegador possa renderizar os caracteres dele e todos os caracteres do restante do documento.</p>
+
+<p>Outra metatag que deve ser considerada essencial é a metatag <a href="https://web.dev/learn/design/intro?hl=pt-br#a_meta_element_for_viewport"><code dir="ltr" translate="no">&lt;viewport&gt;</a></code>, que ajuda na capacidade de resposta do site, permitindo que o conteúdo seja renderizado corretamente por padrão, independentemente da largura da janela. Embora a <a href="https://developer.mozilla.org/docs/Web/HTML/Viewport_meta_tag">metatag da janela de visualização</a> esteja disponível desde junho de 2007, quando o primeiro iPhone foi lançado, ela só foi <a href="https://drafts.csswg.org/css-viewport/#viewport-meta">documentada em uma especificação</a> recentemente.  É altamente recomendável porque permite controlar o tamanho e a escala de uma janela de visualização e evita que o conteúdo do site seja dimensionado para caber em um site de 960 pixels em uma tela de 320 pixels.</p>
+
+<h3 data-text="&lt;head&gt;" id="head" tabindex="-1"><code dir="ltr" translate="no">&lt;head&gt;</code></h3>
+
+<p>Aninhados entre as tags <code dir="ltr" translate="no">&lt;html&gt;</code> de abertura e fechamento, encontramos os dois filhos: <code dir="ltr" translate="no">&lt;head&gt;</code> e <code dir="ltr" translate="no">&lt;body&gt;</code>:</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="HTML"><code translate="no" dir="ltr">&lt;!DOCTYPE html&gt;
+&lt;html lang="en-US"&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></devsite-code>
+<p>O <code dir="ltr" translate="no">&lt;head&gt;</code>, ou cabeçalho de metadados do documento, contém todos os metadados de um site ou aplicativo. O corpo inclui o conteúdo visível. O restante desta seção se concentra nos componentes encontrados aninhados na <code dir="ltr" translate="no">&lt;head&gt;&lt;/head&gt;</code> de abertura e fechamento.</p>
+<h3 data-text="&lt;body&gt;" tabindex="-1"><code dir="ltr" translate="no">&lt;body&gt;</code></h3>
+<p>O Elemento <strong>Body</strong> é o que compõe todo o corpo de conteudo do html publicado</p>
+    </article>
+
+    <!--Difference between OL/UL-->
+    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+    <h3>OL - Ordered List</h3>
+    <p>Uma lista ordenada é muito util para organizar items por ordem de importancia, como uma instrução ou ranking</p>
+    <p><Strong>EXEMPLO:</Strong></p>
+            <ol>
+            <li>Exemplo-1</li>
+            <li>Exemplo-2</li>
+            <li>Exemplo-3</li>
+        </ol>
+    <h3>UL - Unordered List</h3>
+    <p>Listas não ordenadas já se preocupa em seguir uma ordem de prioridade ou ranqueamento</p>
+    <p><Strong>EXEMPLO:</Strong></p>
+        <ul>
+            <li>Exemplo-1</li>
+            <li>Exemplo-2</li>
+            <li>Exemplo-3</li>
+        </ul>
+    <h2 id="links">Links de referências</h2>
+    <ul>
+        <li><a href="https://www.todamateria.com.br/historia-e-evolucao-dos-computadores">história dos computadores</a></li>
+        <li><a href="https://web.dev/learn/html/document-structure?hl=pt-br">estrutura html</a></li>
+        <li><a href="https://www.todamateria.com.br/historia-e-evolucao-dos-computadores">história dos computadores</a></li>
+        <li><a href="https://www.quora.com/What-is-the-difference-between-OL-and-UL-in-HTML">diferenças de listas</a></li>
+        <li><a href="https://www.researchgate.net/publication/377253286_Peningkatan_Kompetensi_Front_End_Web_Programming_Pelatihan_Bahasa_Pemrograman_HTML_dan_CSS_bagi_Mahasiswa/fulltext/659d416c6f6e450f19daa8f4/Peningkatan-Kompetensi-Front-End-Web-Programming-Pelatihan-Bahasa-Pemrograman-HTML-dan-CSS-bagi-Mahasiswa.pdf?__cf_chl_tk=leFAt3qGsqXpwAbnqdMncf14KM9z.SISOZClVgcuxZ0-1755281767-1.0.1.1-YjgtRXbKP6_8.oEl55EXvfzKuVAHUx4A47Ye0O69Drg">imagens utilizadas</a></li>
+    </ul>
+</body>
+</html>
